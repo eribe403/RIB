@@ -1,0 +1,86 @@
+
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Ribera Investments</title>
+	<meta charset="utf-8" />
+	{% load staticfiles %}
+  <link rel="shortcut icon" href="{% static 'info/img/R.png' %}">
+	<meta name="viewport" content = "width=device-width, initial-scale=1.0">
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="{% static 'info/css/bootstrap.min.css' %}"/>
+  <link rel="stylesheet" href="{% static 'info/css/ss.css' %}"/>
+  <link rel="stylesheet" href="{% static 'info/css/justified-nav.css' %}"/>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="{% static 'info/js/Active.js' %}"></script>
+
+</head>
+
+<body class="body">
+    <div class ='container-fluid'>
+    	<div class='row'>
+    		<div class=col-md-12>
+    			<div class="masthead">
+    			  <h3 class="text-muted">Ribera Investment Management</h3>
+            <h6 class='text-muted'>LLC</h6>
+            <nav>
+    			    <ul class="nav nav-justified">
+    			      <li><a href="/">Home</a></li>
+                <li><a href="/about/">About</a></li>
+    			      <li><a href="/contact/">Contact</a></li>
+    			    </ul>
+    			  </nav>
+    			</div>
+    		</div>
+    	</div>
+    <br><br>
+
+		<div class=row>
+		  <div class=col-sm-12>
+
+			 <center><img src="{% static 'info/img/riberalogo.jpeg' %}" class="img-responsive" alt='whip' style='max-height:550px;'></center>
+		  </div>
+		</div>
+
+    <!-- <div class=row>
+      <div class=col-sm-12>
+        <hr class="featurette-divider">
+      </div>
+    </div> -->
+    <hr class="featurette-divider">
+		<div class="row">
+		  <div class="col-sm-12">
+			<div class='container-fluid'>
+			   <br><br>
+			   <center>
+			   {% block content %}
+			   {% endblock %}
+			   </center>
+         <br><br>
+			</div>
+		  </div>
+		</div>
+    <hr class="featurette-divider">
+	</div>
+
+  <footer class="footer navbar-fixed-bottom">
+    <p>Ribera Investment Management LLC &#174;</p>
+    <p>883 Island Drive Suite 200, Alameda, CA  94502</p>
+    <p>
+      <a href="#">Back to top</a>
+    </p>
+  </footer>
+
+	<!-- <footer>
+		<div class="container-fluid" style='margin-left:15px'>
+			<p><a href="#" target="blank">Contact</a> | <a href="https://www.linkedin.com/in/zacharyribera" target="blank">LinkedIn</a> | <a href="#" target="blank">Twitter</a> | <a href="#" target="blank">Google+</a> |
+			<i class="glyphicon glyphicon-envelope"></i></p>
+		</div>
+	</footer> -->
+</body>
+
+
+</html>

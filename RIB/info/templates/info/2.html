@@ -1,0 +1,18 @@
+{% extends 'info/header.html' %}
+{% block content %}
+{% load staticfiles %}
+	<h3> Phone: 510-510-5100 </h3>
+	<center><div id="map" style="float:bottom;width:1800px;height:400px;"></div></center>
+	<script>
+	function myMap() {
+	    var mapOptions = {
+	        center: new google.maps.LatLng(37.737185, -122.240229),
+	        zoom: 14,
+	        mapTypeId: google.maps.MapTypeId.ROADMAP
+	    }
+	var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+	}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+
+{% endblock %}
